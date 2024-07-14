@@ -64,28 +64,28 @@ int main(int argc, char *argv[])
     }
 
     // load sprites
-    SDL_Texture *birdTexture = IMG_LoadTexture(renderer, "sprites/heli.png");
+    SDL_Texture *birdTexture = IMG_LoadTexture(renderer, "heli.png");
     if (!birdTexture)
     {
         SDL_Log("Failed to load bird texture: %s", IMG_GetError());
         return 1;
     }
 
-    SDL_Texture *upperPipeTexture = IMG_LoadTexture(renderer, "sprites/up_pipe.png");
+    SDL_Texture *upperPipeTexture = IMG_LoadTexture(renderer, "up_pipe.png");
     if (!upperPipeTexture)
     {
         SDL_Log("Failed to load upper_pipe texture: %s", IMG_GetError());
         return 1;
     }
 
-    SDL_Texture *lowerPipeTexture = IMG_LoadTexture(renderer, "sprites/low_pipe.png");
+    SDL_Texture *lowerPipeTexture = IMG_LoadTexture(renderer, "low_pipe.png");
     if (!lowerPipeTexture)
     {
         SDL_Log("Failed to load lower_pipe texture: %s", IMG_GetError());
         return 1;
     }
 
-    SDL_Texture *bgTexture = IMG_LoadTexture(renderer, "sprites/background.png");
+    SDL_Texture *bgTexture = IMG_LoadTexture(renderer, "background.png");
     if (!bgTexture)
     {
         SDL_Log("Failed to load background texture: %s", IMG_GetError());
